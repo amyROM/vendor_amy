@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Corner radius of system dialogs -->
+    <dimen name="config_dialogCornerRadius">8dp</dimen>
+    <!-- Corner radius of system buttons -->
+    <dimen name="config_buttonCornerRadius">4dp</dimen>
+    <!-- Corner radius for bottom sheet system dialogs -->
+    <dimen name="config_bottomDialogCornerRadius">16dp</dimen>
+    <!-- Corner radius of system progress bars -->
+    <dimen name="config_progressBarCornerRadius">1000dp</dimen>
+</resources>
