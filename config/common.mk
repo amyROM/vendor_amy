@@ -114,7 +114,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LineageParts \
     LineageSettingsProvider \
-    LineageSetupWizard
+    SetupWizard
 
 # Themes
 PRODUCT_PACKAGES += \
