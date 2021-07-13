@@ -185,6 +185,9 @@ endif
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
 
+# Store
+PRODUCT_PACKAGES += Store
+
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/lineage/overlay/common
 
