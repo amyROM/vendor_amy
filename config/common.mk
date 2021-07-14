@@ -186,6 +186,10 @@ PRODUCT_PACKAGES += Store
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,vendor/lineage/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts)
 
+# Updater
+PRODUCT_PACKAGES += \
+    Updater
+
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/lineage/overlay/common
 
