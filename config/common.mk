@@ -182,6 +182,10 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 # Store
 PRODUCT_PACKAGES += Store
 
+# Fonts
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,vendor/lineage/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts)
+
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/lineage/overlay/common
 
