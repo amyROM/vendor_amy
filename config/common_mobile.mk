@@ -9,7 +9,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # AOSP packages
 PRODUCT_PACKAGES += \
     Email \
-    ExactCalculator \
     Exchange2
 
 # Lineage packages
