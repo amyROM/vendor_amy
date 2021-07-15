@@ -281,6 +281,10 @@ else
     endif
 endif
 
+ifeq ($(LINEAGE_BUILDTYPE), OFFICIAL)
+	LINEAGE_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(LINEAGE_BUILD)-$(LINEAGE_BUILDTYPE)
+endif
+
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/lineage/build/target/product/security/lineage
 
