@@ -190,6 +190,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Updater
 
+# Widget
+PRODUCT_PACKAGES += \
+    Widget
+
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/lineage/overlay/common
 
