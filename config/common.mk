@@ -299,5 +299,11 @@ endif
 PRODUCT_PRODUCT_PROPERTIES += \
 	persist.sys.disable_rescue=true
 
+ifneq ($(TARGET_DISABLE_BLUR), true)
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.sf.blurs_are_expensive=1 \
+    ro.surface_flinger.supports_background_blur=1
+endif
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/lineage/config/partner_gms.mk
