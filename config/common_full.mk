@@ -9,6 +9,7 @@ $(call inherit-product-if-exists, external/google-fonts/rubik/fonts.mk)
 
 # Fonts
 PRODUCT_PACKAGES += \
+    Custom-Fonts \
     fonts_customization.xml \
     LineageLatoFont \
     LineageRubikFont
