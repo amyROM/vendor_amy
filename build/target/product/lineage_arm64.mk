@@ -15,7 +15,7 @@
 $(call inherit-product, build/target/product/aosp_arm64.mk)
 $(call inherit-product, build/target/product/gsi_release.mk)
 
-include vendor/lineage/build/target/product/lineage_generic_target.mk
+include vendor/amy/build/target/product/lineage_generic_target.mk
 
 TARGET_NO_KERNEL_OVERRIDE := true
 
