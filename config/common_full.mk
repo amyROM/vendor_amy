@@ -1,5 +1,5 @@
 # Inherit common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_mobile.mk)
+$(call inherit-product, vendor/amy/config/common_mobile.mk)
 
 PRODUCT_SIZE := full
 
@@ -22,4 +22,4 @@ PRODUCT_PACKAGES += \
     FDroid \
     FDroidPrivilegedExtension
 
-$(call inherit-product-if-exists, vendor/lineage/config/accents.mk)
+$(call inherit-product-if-exists, vendor/amy/config/accents.mk)

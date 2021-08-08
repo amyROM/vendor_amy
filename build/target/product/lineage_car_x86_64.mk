@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include vendor/lineage/build/target/product/lineage_generic_car_target.mk
+include vendor/amy/build/target/product/lineage_generic_car_target.mk
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_x86_64.mk)
 

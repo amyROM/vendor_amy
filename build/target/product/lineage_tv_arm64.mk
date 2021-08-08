@@ -14,7 +14,7 @@
 
 $(call inherit-product, device/google/atv/products/aosp_tv_arm64.mk)
 
-include vendor/lineage/build/target/product/lineage_generic_tv_target.mk
+include vendor/amy/build/target/product/lineage_generic_tv_target.mk
 
 TARGET_NO_KERNEL_OVERRIDE := true
 
