@@ -40,6 +40,8 @@ except ImportError:
 
 from xml.etree import ElementTree
 
+revisionName = 'rosie'
+
 product = sys.argv[1]
 
 if len(sys.argv) > 2:
@@ -128,7 +130,8 @@ def get_default_revision():
     m = ElementTree.parse(get_manifest_path())
     d = m.findall('default')[0]
     r = d.get('revision')
-    return r.replace('refs/heads/', '').replace('refs/tags/', '')
+    #return r.replace('refs/heads/', '').replace('refs/tags/', '')
+    return revisionName
 
 def get_from_manifest(devicename):
     try:
@@ -206,7 +209,7 @@ def add_to_manifest(repositories, fallback_branch = "rosie"):
 
         print('Adding dependency: amyROM-devices/%s -> %s' % (repo_name, repo_target))
         project = ElementTree.Element("project", attrib = { "path": repo_target,
-            "remote": "github", "name": "amyROM-devices/%s" % repo_name })
+            "remote": "devices", "name": "%s" % repo_name })
 
         if 'branch' in repository:
             project.set('revision',repository['branch'])
