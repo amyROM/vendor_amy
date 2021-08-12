@@ -12,12 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, build/target/product/aosp_x86_ab.mk)
+$(call inherit-product, build/target/product/aosp_x86_64_ab.mk)
 
-include vendor/amy/build/target/product/lineage_generic_target.mk
+include vendor/amy/build/target/product/amy_generic_target.mk
 
-TARGET_USES_64_BIT_BINDER := true
-
-PRODUCT_NAME := lineage_x86_ab
+PRODUCT_NAME := amy_x86_64_ab
 
 PRODUCT_SDK_ADDON_SYS_IMG_SOURCE_PROP := $(LOCAL_PATH)/source.properties

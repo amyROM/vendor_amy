@@ -12,10 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, build/target/product/aosp_arm64_ab.mk)
+$(call inherit-product, device/google/atv/products/aosp_tv_x86_64.mk)
 
-include vendor/amy/build/target/product/lineage_generic_target.mk
+include vendor/amy/build/target/product/amy_generic_tv_target.mk
 
-TARGET_NO_KERNEL_OVERRIDE := true
+PRODUCT_NAME := amy_tv_x86_64
 
-PRODUCT_NAME := lineage_arm64_ab
+PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS :=
+
+PRODUCT_SDK_ADDON_NAME := lineage
+PRODUCT_SDK_ADDON_SYS_IMG_SOURCE_PROP := $(LOCAL_PATH)/source.properties
