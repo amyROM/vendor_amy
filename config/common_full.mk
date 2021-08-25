@@ -21,3 +21,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FDroid \
     FDroidPrivilegedExtension
+
+$(call inherit-product-if-exists, vendor/lineage/config/accents.mk)
