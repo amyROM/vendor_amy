@@ -16,3 +16,5 @@ PRODUCT_PACKAGES += \
 # Recorder
 PRODUCT_PACKAGES += \
     Recorder
+
+$(call inherit-product-if-exists, vendor/lineage/config/accents.mk)
