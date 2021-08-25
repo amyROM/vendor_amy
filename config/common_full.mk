@@ -17,3 +17,5 @@ PRODUCT_PACKAGES += \
 # Recorder
 PRODUCT_PACKAGES += \
     Recorder
+
+$(call inherit-product-if-exists, vendor/amy/config/accents.mk)
