@@ -18,4 +18,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Recorder
 
-$(call inherit-product-if-exists, vendor/amy/config/accents.mk)
+# Inherit theme configs
+$(call inherit-product, vendor/amy/config/accents.mk)
+$(call inherit-product, vendor/amy/config/shapes.mk)
