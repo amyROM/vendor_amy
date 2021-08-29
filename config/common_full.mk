@@ -17,4 +17,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Recorder
 
-$(call inherit-product-if-exists, vendor/lineage/config/accents.mk)
+# Inherit theme configs
+$(call inherit-product, vendor/lineage/config/accents.mk)
+$(call inherit-product, vendor/lineage/config/shapes.mk)
