@@ -26,7 +26,9 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/amy_tv_arm.mk \
     $(LOCAL_DIR)/amy_tv_arm64.mk \
     $(LOCAL_DIR)/amy_tv_x86.mk \
-    $(LOCAL_DIR)/amy_tv_x86_64.mk
+    $(LOCAL_DIR)/amy_tv_x86_64.mk \
+    $(LOCAL_DIR)/amy_car_arm64.mk \
+    $(LOCAL_DIR)/amy_car_x86_64.mk
 
 COMMON_LUNCH_CHOICES := \
     amy_arm-userdebug \
@@ -40,4 +42,6 @@ COMMON_LUNCH_CHOICES := \
     amy_tv_arm-userdebug \
     amy_tv_arm64-userdebug \
     amy_tv_x86-userdebug \
-    amy_tv_x86_64-userdebug
+    amy_tv_x86_64-userdebug \
+    amy_car_arm64-userdebug \
+    amy_car_x86_64-userdebug
