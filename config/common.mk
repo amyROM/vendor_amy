@@ -184,6 +184,8 @@ PRODUCT_VERSION_MAINTENANCE := 0
 
 ifneq ($(DEVICE_CUSTOM_BOOTANIMATION),)
     PRODUCT_COPY_FILES += $(DEVICE_CUSTOM_BOOTANIMATION):$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
+else
+    PRODUCT_COPY_FILES += vendor/lineage/prebuilt/bootanimation.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
 endif
 
 # Filter out random types, so it'll reset to UNOFFICIAL
