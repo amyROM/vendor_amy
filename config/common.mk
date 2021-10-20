@@ -103,10 +103,6 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
-# AOSP packages
-PRODUCT_PACKAGES += \
-    Terminal
-
 # Lineage packages
 PRODUCT_PACKAGES += \
     LineageParts \
