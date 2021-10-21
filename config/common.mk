@@ -199,6 +199,14 @@ else
     PRODUCT_COPY_FILES += vendor/amy/prebuilt/bootanimation.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
 endif
 
+TARGET_USES_APTX ?= true
+
+ifeq ($(TARGET_USES_APTX), true)
+    PRODUCT_PACKAGES += \
+        libaptX_encoder \
+        libaptXHD_encoder
+endif
+
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/amy/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/amy/overlay/common
 
