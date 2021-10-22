@@ -19,3 +19,5 @@ PRODUCT_COPY_FILES += \
 
 # Allow building otatools
 TARGET_FORCE_OTA_PACKAGE := true
+
+PRODUCT_MANUFACTURER := amyROM
