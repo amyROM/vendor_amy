@@ -207,6 +207,8 @@ ifeq ($(TARGET_IS_GSI), true)
     $(call inherit-product, vendor/hardware_overlay/overlay.mk)
 endif
 
+include vendor/amy/config/fonts.mk
+
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/amy/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/amy/overlay/common
 
