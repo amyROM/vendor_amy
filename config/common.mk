@@ -207,6 +207,10 @@ ifeq ($(TARGET_USES_APTX), true)
         libaptXHD_encoder
 endif
 
+ifeq ($(TARGET_IS_GSI), true)
+    $(call inherit-product, vendor/hardware_overlay/overlay.mk)
+endif
+
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/amy/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/amy/overlay/common
 

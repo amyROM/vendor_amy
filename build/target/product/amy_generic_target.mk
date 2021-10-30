@@ -12,6 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+TARGET_IS_GSI := true
+
 $(call inherit-product, vendor/amy/config/common_full_phone.mk)
 
 PRODUCT_COPY_FILES += \
