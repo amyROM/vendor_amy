@@ -181,10 +181,6 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 # Store
 PRODUCT_PACKAGES += Store
 
-# Fonts
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,vendor/amy/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts)
-
 # Updater
 PRODUCT_PACKAGES += \
     Updater
