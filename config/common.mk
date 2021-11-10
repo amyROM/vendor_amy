@@ -209,6 +209,10 @@ endif
 
 include vendor/amy/config/fonts.mk
 
+# cLock
+PRODUCT_PACKAGES += \
+    LockClock
+
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/amy/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/amy/overlay/common
 
