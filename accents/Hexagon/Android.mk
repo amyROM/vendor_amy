@@ -3,8 +3,8 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE_TAGS := optional
 
-LOCAL_PACKAGE_NAME := CyanogenMOD
-LOCAL_RRO_THEME := CyanogenMOD
+LOCAL_PACKAGE_NAME := Hexagon
+LOCAL_RRO_THEME := Hexagon
 LOCAL_SDK_VERSION := current
 LOCAL_CERTIFICATE := platform
 LOCAL_PRODUCT_MODULE := true

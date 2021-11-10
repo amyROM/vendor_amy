@@ -18,9 +18,12 @@
     <!-- Accent -->
     <color name="accent_device_default_700">#00B1E5</color>
     <color name="accent_device_default_light">#00B1E5</color>
-    <color name="accent_device_default_dark">#00B1E5</color>
+    <color name="accent_device_default_dark">#007dA2</color>
 
     <!-- Fastscroller -->
     <color name="fastscroller_text_color">#FF000000</color>
 
+    <!-- Dark mode backgrounds -->
+    <color name="primary_dark_device_default_settings">#1A1A1A</color>
+    <color name="background_device_default_dark">#1A1A1A</color>
 </resources>
