@@ -213,6 +213,8 @@ include vendor/amy/config/fonts.mk
 PRODUCT_PACKAGES += \
     LockClock
 
+PRODUCT_COPY_FILES += vendor/amy/prebuilt/Desmeon-Hellcat.mp3:$(TARGET_COPY_OUT_PRODUCT)/media/audio/music/Desmeon-Hellcat.mp3
+
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/amy/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/amy/overlay/common
 
