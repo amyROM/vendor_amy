@@ -24,3 +24,8 @@ AMY_TARGET_GSI := $(PRODUCT_OUT)/$(AMY_GSI_NAME)
 pork: $(INSTALLED_SYSTEMIMAGE_TARGET)
 	$(hide) cp $(INSTALLED_SYSTEMIMAGE_TARGET) $(AMY_TARGET_GSI)
 	@echo "Package Complete: $(AMY_TARGET_GSI)" >&2
+
+.PHONY: porkz
+porkz: $(INSTALLED_SYSTEMIMAGE_TARGET)
+	$(hide) zstd -15 -T0 $(AMY_TARGET_GSI) -o $(AMY_TARGET_GSI).zst
+	@echo "Package Complete: $(AMY_TARGET_GSI).zst" >&2
