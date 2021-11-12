@@ -178,9 +178,6 @@ endif
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
 
-# Store
-PRODUCT_PACKAGES += Store
-
 # Updater
 PRODUCT_PACKAGES += \
     Updater
