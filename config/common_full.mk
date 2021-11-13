@@ -16,3 +16,8 @@ PRODUCT_PACKAGES += \
 # Recorder
 PRODUCT_PACKAGES += \
     Recorder
+
+# F-Droid
+PRODUCT_PACKAGES += \
+    FDroid \
+    FDroidPrivilegedExtension
