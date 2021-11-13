@@ -27,6 +27,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Recorder
 
+# F-Droid
+PRODUCT_PACKAGES += \
+    FDroid \
+    FDroidPrivilegedExtension
+
 # Inherit theme configs
 $(call inherit-product, vendor/amy/config/accents.mk)
 $(call inherit-product, vendor/amy/config/shapes.mk)
