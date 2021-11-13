@@ -18,10 +18,11 @@
 
 AMY_TARGET_PACKAGE := $(PRODUCT_OUT)/amyROM-$(AMY_VERSION).zip
 
-MD5 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/sha256sum
+SHA256 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/sha256sum
 
 .PHONY: bacon
 bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
 	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(AMY_TARGET_PACKAGE)
+	$(hide) $(SHA256) $(AMY_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(AMY_TARGET_PACKAGE).sha256sum
 	$(hide) ./vendor/amy/scripts/generate_json_build_info.sh $(AMY_TARGET_PACKAGE)
 	@echo "Package Complete: $(AMY_TARGET_PACKAGE)" >&2

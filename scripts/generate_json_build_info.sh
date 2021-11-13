@@ -6,7 +6,7 @@ then
   DEVICE=$(echo $TARGET_PRODUCT | cut -d "_" -f2)
   if [ -f $file_path ]; then
     file_size=$(stat -c%s $file_path)
-    id=$(cat "$file_path.md5sum" | cut -d' ' -f1)
+    id=$(cat "$file_path.sha256sum" | cut -d' ' -f1)
     datetime=$(grep ro\.build\.date\.utc ./out/target/product/$DEVICE/system/build.prop | cut -d= -f2);
     rom_version=$(grep ro\.lineage\.version ./out/target/product/$DEVICE/system/build.prop | cut -d= -f2 | cut -d "v" -f2);
     custom_build_type=$(grep ro\.lineage\.releasetype ./out/target/product/$DEVICE/system/build.prop | cut -d= -f2);
