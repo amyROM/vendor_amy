@@ -7,7 +7,7 @@ endif
 # LineageOS System Version
 ADDITIONAL_BUILD_PROPERTIES += \
     ro.lineage.version=$(LINEAGE_VERSION) \
-    ro.lineage.releasetype=$(LINEAGE_BUILDTYPE) \
+    ro.lineage.releasetype=$(AMY_BUILDTYPE) \
     ro.lineage.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
     ro.modversion=$(LINEAGE_VERSION) \
     ro.lineagelegal.url=https://lineageos.org/legal
@@ -25,4 +25,5 @@ ADDITIONAL_BUILD_PROPERTIES += \
     ro.lineage.build.version.plat.rev=$(LINEAGE_PLATFORM_REV)
 
 ADDITIONAL_BUILD_PROPERTIES += \
-    ro.amyrom.version=$(AMY_VERSION)
+    ro.amyrom.version=$(AMY_VERSION) \
+    ro.amyrom.releasetype=$(AMY_BUILDTYPE)
