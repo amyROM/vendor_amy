@@ -16,7 +16,7 @@
 # -----------------------------------------------------------------
 # Lineage OTA update package
 
-AMY_TARGET_PACKAGE := $(PRODUCT_OUT)/amyROM-$(AMY_VERSION).zip
+AMY_TARGET_PACKAGE := $(PRODUCT_OUT)/amyROM-LTS-$(AMY_VERSION).zip
 
 SHA256 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/sha256sum
 
