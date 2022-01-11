@@ -211,7 +211,7 @@ PRODUCT_PACKAGES += \
     LockClock
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/amy/overlay
-DEVICE_PACKAGE_OVERLAYS += vendor/amy/overlay/common
+DEVICE_PACKAGE_OVERLAYS += vendor/amy/overlay/common vendor/amy/overlay/amyrom
 
 PRODUCT_VERSION_MAJOR = 2
 PRODUCT_VERSION_MINOR = 6
