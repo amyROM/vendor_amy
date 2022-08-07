@@ -7,3 +7,4 @@ PRODUCT_PACKAGES += \
 
 # Include Lineage LatinIME dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/amy/overlay/dictionaries
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/amy/overlay/dictionaries
