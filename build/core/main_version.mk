@@ -23,3 +23,8 @@ ADDITIONAL_BUILD_PROPERTIES += \
 # LineageOS Platform Internal Version
 ADDITIONAL_BUILD_PROPERTIES += \
     ro.lineage.build.version.plat.rev=$(LINEAGE_PLATFORM_REV)
+
+# amyROM Version
+ADDITIONAL_BUILD_PROPERTIES += \
+    ro.amyrom.version=$(AMY_VERSION) \
+    ro.amyrom.releasetype=$(AMY_BUILDTYPE)
