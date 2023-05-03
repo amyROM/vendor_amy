@@ -18,6 +18,7 @@
 from __future__ import print_function
 
 import base64
+import glob
 import json
 import netrc
 import os
@@ -134,28 +135,30 @@ def get_default_revision():
     return revisionName
 
 def get_from_manifest(devicename):
-    try:
-        lm = ElementTree.parse(".repo/local_manifests/roomservice.xml")
-        lm = lm.getroot()
-    except:
-        lm = ElementTree.Element("manifest")
+    for path in glob.glob(".repo/local_manifests/*.xml"):
+        try:
+            lm = ElementTree.parse(path)
+            lm = lm.getroot()
+        except:
+            lm = ElementTree.Element("manifest")
 
-    for localpath in lm.findall("project"):
-        if re.search("device_.*_%s$" % device, localpath.get("name")):
-            return localpath.get("path")
+        for localpath in lm.findall("project"):
+            if re.search("device_.*_%s$" % device, localpath.get("name")):
+                return localpath.get("path")
 
     return None
 
 def is_in_manifest(projectpath):
-    try:
-        lm = ElementTree.parse(".repo/local_manifests/roomservice.xml")
-        lm = lm.getroot()
-    except:
-        lm = ElementTree.Element("manifest")
+    for path in glob.glob(".repo/local_manifests/*.xml"):
+        try:
+            lm = ElementTree.parse(path)
+            lm = lm.getroot()
+        except:
+            lm = ElementTree.Element("manifest")
 
-    for localpath in lm.findall("project"):
-        if localpath.get("path") == projectpath:
-            return True
+        for localpath in lm.findall("project"):
+            if localpath.get("path") == projectpath:
+                return True
 
     # Search in main manifest, too
     try:
