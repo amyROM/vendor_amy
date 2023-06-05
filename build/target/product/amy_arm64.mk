@@ -12,10 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include vendor/amy/build/target/product/lineage_generic_car_target.mk
+$(call inherit-product, build/target/product/aosp_arm64.mk)
+$(call inherit-product, build/target/product/gsi_release.mk)
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_arm64.mk)
+include vendor/amy/build/target/product/amy_generic_target.mk
 
 TARGET_NO_KERNEL_OVERRIDE := true
 
-PRODUCT_NAME := lineage_car_arm64
+PRODUCT_NAME := amy_arm64

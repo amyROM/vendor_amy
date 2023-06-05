@@ -14,10 +14,10 @@
 
 $(call inherit-product, device/google/atv/products/aosp_tv_arm64.mk)
 
-include vendor/amy/build/target/product/lineage_generic_tv_target.mk
+include vendor/amy/build/target/product/amy_generic_tv_target.mk
 
 TARGET_NO_KERNEL_OVERRIDE := true
 
-PRODUCT_NAME := lineage_tv_arm64
+PRODUCT_NAME := amy_tv_arm64
 
 PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS :=
