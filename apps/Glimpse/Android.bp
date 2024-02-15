@@ -1,0 +1,16 @@
+android_app_import {
+    name: "Glimpse",
+    product_specific: true,
+    // Make sure the build system doesn't try to resign the APK
+    dex_preopt: {
+        enabled: false,
+    },
+    overrides: [
+        "Gallery",
+        "Gallery2",
+        "Gallery3D",
+        "GalleryNew3D",
+    ],
+    apk: "Glimpse20240315.apk",
+    presigned: true,
+}
