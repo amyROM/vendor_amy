@@ -6,8 +6,8 @@ function check_product()
         echo "Couldn't locate the top of the tree. Try setting TOP." >&2
         return
     fi
-    if (echo -n $1 | grep -q -e "^lineage_") ; then
-        LINEAGE_BUILD=$(echo -n $1 | sed -e 's/^lineage_//g')
+    if (echo -n $1 | grep -q -e "^amy_") ; then
+        LINEAGE_BUILD=$(echo -n $1 | sed -e 's/^amy_//g')
     else
         LINEAGE_BUILD=
     fi
@@ -53,7 +53,7 @@ function breakfast()
                 variant="userdebug"
             fi
 
-            lunch lineage_$target-$aosp_target_release-$variant
+            lunch amy_$target-$aosp_target_release-$variant
         fi
     fi
     return $?
